@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius | LiquidGlass Auction</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+   
+    <header>
+        <div class="navbar">
+            <h1>GeniuSAuction</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#shoe-history">Shoe History</a></li>
+                    <li><a href="#venue-section">Venue</a></li>
+                    <li><a href="#reviews">User Reviews</a></li>
+                    <li><a href="#sign-in">Sign In</a></li>
+                </ul>
+            </nav>
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    
+
+ 
+    <section id="auction-details" class="auction-details">
+        <div class="shoe-section">
+            <h2>The Shoe You Are Bidding For</h2>
+            <div class="shoe-image">
+                <img src="images/img1.jpg" alt="Auction Shoe">
+            </div>
+            <h3>This exclusive LiquidGlass will be available for bidding at 21:00hrs on 30th November!</h3>
+        </div>
+
+        <div class="countdown">
+            <h5>The Auction Starts in:</h5>
+            <div id="countdown-timer"></div>
+        </div>
+    </section>
+
+    <section id="shoe-history" class="shoe-history">
+        <h2>The Journey of This Legendary Shoe</h2>
+        <p>Every shoe has a story, but this one is unlike any other. With its distinct style and unparalleled design, this shoe has traveled places most people can only dream of.</p>
+        
+        <div class="shoe-facts">
+            <ul>
+                <li><strong>Places it has visited:</strong> From the bustling streets of SA - Johannesburg, Gauteng, Randbag, Bloubosrand, Cosmo City, to the cultural hearts of Zimbabwe - Mutare(Hobhouse,CBD) & Bulawayo(CBD, Nust, Brentwood, Selbourne), this shoe has graced some of the world's most iconic locations.</li>
+                <li><strong>Miles it has walked:</strong> Less than 12.5 miles, making it roughly 26,400 steps that have been covered by this legendary shoe, walking through diverse terrains, making memories at every step.</li>
+                <li><strong>Its Beauty:</strong> "Crafted with precision, this shoe is more than just footwear—it's a piece of art. Under the sunlight, the shoe gleams with a brilliance so dazzling, it might almost poke you in the eye, its shimmering surface catches the light from every angle, creating an effect that's nothing short of mesmerizing, turning heads wherever you go. Whether you're standing still or in motion, this shoe exudes a sense of luxury and refinement, making a statement without saying a word."
+                </li>
+                <li><strong>Uniqueness:</strong> You won't find another one like it. This shoe is a rare gem, and it's about to be yours if you are worthy!</li>
+            </ul>
+        </div>
+    </section>
+    
+
+   
+    <section id="venue-section" class="venue-section">
+        <h2>The Venue for the Auction</h2>
+        <p>The auction will take place at the Nust University in the Commerce Building Basement, located in, Bulawayo City</p>
+        <div class="venue-video-container">
+            <video id="venue-video" controls>
+                <source src="videos/vids2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="video-section" class="video-section">
+        <h2>Watch the Auction Preview Video</h2>
+        <div class="video-container">
+            <video id="auction-video" controls>
+                <source src="videos/vids0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="rating-section" class="rating-section">
+        <h2>Why You Should Buy This Liquid Glass Shoe</h2>
+        <p>This isn't just a shoe, it's a statement. Perfect for collectors and fashion enthusiasts alike, this shoe offers an unmatched combination of luxury, rarity, and craftsmanship. Make it yours before it's gone forever.</p>
+        
+        <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>User Reviews</h2>
+        <div class="review-gallery">
+            <div class="review-card">
+                <img src="images/img10.jpg" alt="Review 1">
+            </div>
+            <div class="review-card">
+                <img src="images/img11.jpg" alt="Review 2">
+            </div>
+            <div class="review-card">
+                <img src="images/img2.jpg" alt="Review 3">
+            </div>
+            <div class="review-card">
+                <img src="images/img4.jpg" alt="Review 1">
+            </div>
+            <div class="review-card">
+                <img src="images/img3.jpg" alt="Review 2">
+            </div>
+            <div class="review-card">
+                <img src="images/img5.jpg" alt="Review 3">
+            </div>
+            <div class="review-card">
+                <img src="images/img6.jpg" alt="Review 1">
+            </div>
+            <div class="review-card">
+                <img src="images/img7.jpg" alt="Review 2">
+            </div>
+            <div class="review-card">
+                <img src="images/img9.jpg" alt="Review 3">
+            </div>
+            <div class="review-card">
+                <img src="images/img8.jpg" alt="Review 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="sign-in" class="sign-in">
+        <h2>Sign In to Participate</h2>
+        <form id="sign-in-form" onsubmit="clearFields(event)">
+          
+            <input type="text" id="name" placeholder="Full Name" required> 
+    
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="New password" required>
+ 
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Genius LiguidGlass Auction. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
